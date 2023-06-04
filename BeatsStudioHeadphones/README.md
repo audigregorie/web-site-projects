@@ -1,7 +1,10 @@
 # Beats Studio Headphones
 
-![Beats Studio Headphones|200](img/BeatsStudioHeadphones-mobile-screenshot.png)
-![Beats Studio Headphones|200](img/BeatsStudioHeadphones-desktop-screenshot.png)
+<!-- ![Beats Studio Headphones|200](img/BeatsStudioHeadphones-mobile-screenshot.png) -->
+<!-- ![Beats Studio Headphones|200](img/BeatsStudioHeadphones-desktop-screenshot.png) -->
+
+<img src="img/BeatsStudioHeadphones-mobile-screenshot.png" width="200" height="300">
+<img src="img/BeatsStudioHeadphones-desktop-screenshot.png" width="600" height="300">
 
 ---
 
