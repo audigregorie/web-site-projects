@@ -1,8 +1,5 @@
 # Beats Studio Headphones
 
-<!-- ![Beats Studio Headphones|200](img/BeatsStudioHeadphones-mobile-screenshot.png) -->
-<!-- ![Beats Studio Headphones|200](img/BeatsStudioHeadphones-desktop-screenshot.png) -->
-
 <img src="img/BeatsStudioHeadphones-mobile-screenshot.png" width="200" height="300">
 <img src="img/BeatsStudioHeadphones-desktop-screenshot.png" width="600" height="300">
 
@@ -22,4 +19,16 @@ The website contains 4 sections:
    -  Discount offered while purchasing now through the website
 -  Products
    -  Selection of the different style of Beats 3 headphones that you can choose
-   -  Contact section included below ( This should be an individual section. I will learn from this and make a designated contact section in my future projects.)
+   -  Contact section included below
+
+Technologies used:
+
+-  HTML
+-  SCSS
+-  JAVASCRIPT
+
+Things I learned:
+
+-  More practice with Grid layout css.
+-  How to organize my scss files.
+-  Remember to make a designated Contact section.
