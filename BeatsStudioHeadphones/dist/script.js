@@ -45,7 +45,7 @@ function scrollUp() {
 }
 window.addEventListener('scroll', scrollUp)
 
-/* SCROLL SECTIONS ACTIVE LINK */
+/* ACTIVE LINK WHEN SCROLLING SECTIONS */
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive() {
