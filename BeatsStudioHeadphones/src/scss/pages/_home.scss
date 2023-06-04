@@ -1,0 +1,105 @@
+@use '../helpers/mixins' as *;
+@use '../helpers/variables' as var;
+
+.home {
+   &_container {
+      @include sm {
+         grid-template-columns: 0.8fr 1fr;
+      }
+
+      @include md {
+         position: relative;
+         grid-template-columns: repeat(2, 1fr);
+      }
+   }
+
+   &_img {
+      width: 250px;
+      position: absolute;
+      top: -16rem;
+      right: 1.5rem;
+
+      @include sm {
+         top: -7rem;
+         left: 0;
+      }
+
+      @include md {
+         top: -9rem;
+         left: 4rem;
+      }
+
+      @include lg {
+         width: 300px;
+         top: -15rem;
+         left: 6rem;
+      }
+
+      @include xl {
+         left: 11rem;
+      }
+
+      @include xxl {
+         left: 15rem;
+      }
+   }
+
+   &_data {
+      padding-top: 5rem;
+
+      @include sm {
+         padding-top: 2rem;
+      }
+
+      @include md {
+         padding-top: 8rem;
+      }
+   }
+
+   &_header {
+      position: relative;
+   }
+
+   &_title {
+      position: absolute;
+      top: -4rem;
+      left: 1rem;
+      line-height: 6rem;
+      font-size: var.$largest-font-size;
+      background: var.$text-gradient;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      @include lg {
+         top: -5rem;
+         left: 3.5rem;
+      }
+   }
+
+   &_subtitle {
+      font-size: var.$large-font-size;
+      margin-bottom: var.$mb-2;
+   }
+
+   &_title-description {
+      font-size: var.$large-font-size;
+      font-weight: var.$font-medium;
+      margin-bottom: var.$mb-1;
+   }
+
+   &_description {
+      margin-bottom: var.$mb-2-5;
+      line-height: var.$text-line-height;
+
+      @include lg {
+         padding-right: 5rem;
+      }
+   }
+
+   &_price {
+      font-size: var.$h3-font-size;
+      font-weight: var.$font-semi-bold;
+      margin-left: var.$mb-0-75;
+   }
+}

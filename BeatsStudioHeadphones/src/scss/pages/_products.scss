@@ -1,0 +1,81 @@
+@use '../helpers/_mixins.scss' as *;
+@use '../helpers/variables' as var;
+
+.products {
+   &_container {
+      grid-template-columns: repeat(2, minmax(auto, 480px));
+      gap: 5rem 1.5rem;
+      padding-top: 3rem;
+      justify-content: center;
+
+      @include lg {
+         grid-template-columns: repeat(3, minmax(auto, 380px));
+      }
+   }
+
+   &_card {
+      position: relative;
+      height: 132px;
+      background-color: var.$container-color;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+
+      @include sm {
+         height: 142px;
+      }
+
+      @include md {
+         height: 152px;
+         padding: 0.85rem;
+      }
+
+      @include lg {
+         height: 172px;
+      }
+   }
+
+   &_img {
+      width: 88px;
+      position: absolute;
+      inset: 0;
+      margin-right: auto;
+      margin-left: auto;
+      top: -2.5rem;
+      left: 8rem;
+
+      @include md {
+         top: -2.5rem;
+         left: 0;
+      }
+      @include lg {
+         top: -2.5rem;
+         left: 8rem;
+      }
+
+      @media (min-width: 1150px) {
+         top: -2.5rem;
+         left: 0rem;
+      }
+   }
+
+   &_content {
+      align-items: center;
+   }
+
+   &_title,
+   &_price {
+      font-size: var.$small-font-size;
+   }
+
+   &_price {
+      font-weight: var.$font-semi-bold;
+   }
+
+   &_button {
+      position: absolute;
+      right: 0.5rem;
+      bottom: 0.5rem;
+      padding: 0.5rem;
+      border-radius: 0.35rem;
+   }
+}

@@ -1,0 +1,55 @@
+@use '../helpers/_mixins.scss' as *;
+@use '../helpers/variables' as var;
+
+.case {
+   &_container {
+      position: relative;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 2rem;
+
+      @include sm {
+         justify-content: center;
+         align-items: center;
+      }
+
+      @include lg {
+         grid-template-columns: max-content 580px;
+         column-gap: 9rem;
+      }
+   }
+
+   &_data {
+      padding: 5rem 0 3rem;
+
+      @include sm {
+         padding: 0;
+      }
+   }
+
+   &_img {
+      width: 250px;
+      position: absolute;
+      left: -7rem;
+
+      @include sm {
+         position: initial;
+      }
+
+      @include md {
+         width: 280px;
+      }
+   }
+
+   &_description {
+      margin-bottom: var.$mb-1-5;
+      line-height: var.$text-line-height;
+
+      @include md {
+         margin-bottom: var.$mb-2;
+      }
+   }
+
+   &_info_icon {
+      font-size: 1.2rem;
+   }
+}

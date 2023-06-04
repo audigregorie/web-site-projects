@@ -1,0 +1,25 @@
+@use '../helpers/mixins' as *;
+.sponsor {
+   .sponsor_img {
+      width: 80px;
+   }
+
+   .sponsor_container {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 5rem;
+      justify-items: center;
+      align-items: center;
+
+      @include sm {
+         grid-template-columns: repeat(4, 1fr);
+      }
+
+      @include md {
+         grid-template-columns: repeat(4, 1fr);
+      }
+
+      @include lg {
+         grid-template-columns: repeat(4, 1fr);
+      }
+   }
+}

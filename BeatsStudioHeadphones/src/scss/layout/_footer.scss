@@ -1,0 +1,119 @@
+@use '../helpers/mixins' as *;
+@use '../helpers/variables' as var;
+
+.footer {
+   &_container {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 3rem;
+      justify-items: center;
+
+      @include lg {
+         padding-top: 3rem;
+         justify-items: start;
+      }
+
+      @include xl {
+         grid-template-columns: repeat(2, minmax(auto, 450px));
+         justify-items: center;
+      }
+
+      @include xxl {
+         grid-template-columns: repeat(2, minmax(auto, 550px));
+      }
+   }
+
+   &_logo {
+      width: 2rem;
+      grid-column: span 2;
+
+      @include lg {
+         grid-column: span 4;
+         margin-bottom: 1rem;
+      }
+   }
+
+   &_content {
+      grid-column: span 1;
+
+      @include lg {
+         margin-bottom: 2re;
+      }
+   }
+
+   &_title {
+      font-size: var.$h3-font-size;
+      font-weight: var.$font-medium;
+      margin-bottom: var.$mb-1;
+   }
+
+   &_list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.5rem;
+   }
+
+   &_link {
+      color: var.$text-color;
+
+      &:hover {
+         color: var.$white;
+      }
+   }
+
+   &_contact {
+      display: grid;
+      grid-column: span 2;
+      grid-template-rows: 1fr;
+      justify-items: center;
+      margin-bottom: 5rem;
+   }
+
+   &_form {
+      column-gap: 0.5rem;
+      background-color: var.$container-color;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.5rem;
+      margin-bottom: var.$mb-2;
+   }
+
+   &_input {
+      background-color: var.$container-color;
+      color: var.$white;
+
+      &::placeholder {
+         color: var.$text-color;
+         font-size: var.$normal-font-size;
+         font-family: var.$body-font;
+      }
+   }
+
+   &_social {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 1.25rem;
+      &-link {
+         color: var.$white;
+         background-color: var.$container-color;
+         padding: 0.5rem 0.75rem;
+         border-radius: 0.25rem;
+         font-size: 1rem;
+
+         &:hover {
+            background-color: var.$black;
+         }
+      }
+   }
+
+   &_copy {
+      text-align: center;
+
+      &-link {
+         font-size: var.$smaller-font-size;
+         color: var.$text-color-light;
+      }
+
+      @include lg {
+         margin-top: 6rem;
+      }
+   }
+}
