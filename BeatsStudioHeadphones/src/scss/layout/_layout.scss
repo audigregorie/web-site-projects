@@ -1,0 +1,15 @@
+@use '../helpers/mixins' as *;
+@use '../helpers/variables' as var;
+
+.main {
+   overflow: hidden;
+}
+
+.container {
+   margin-left: var.$mb-1-5;
+   margin-right: var.$mb-1-5;
+}
+
+.grid {
+   display: grid;
+}

@@ -1,0 +1,16 @@
+@use '../helpers/variables' as var;
+
+.header {
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: var.$z-fixed;
+}
+
+/* HEADER JAVASCRIPT */
+/* Change background color of Header */
+.scroll-header {
+   background-color: var.$body-color;
+   transition: 0.4s;
+}

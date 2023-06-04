@@ -1,0 +1,90 @@
+@use '../helpers/_mixins.scss' as *;
+@use '../helpers/variables' as var;
+
+.specs {
+   &_container {
+      position: relative;
+
+      @include sm {
+         grid-template-columns: repeat(2, minmax(auto, 280px));
+         justify-content: center;
+         align-items: center;
+         height: 300px;
+      }
+
+      @include md {
+         grid-template-columns: repeat(2, minmax(auto, 300px));
+         column-gap: 6rem;
+      }
+
+      @include lg {
+         grid-template-columns: repeat(2, minmax(auto, 320px));
+      }
+
+      @include xl {
+         grid-template-columns: repeat(2, minmax(auto, 340px));
+         column-gap: 7rem;
+      }
+      @include xxl {
+         grid-template-columns: repeat(2, minmax(auto, 500px));
+         column-gap: 8rem;
+      }
+   }
+
+   &_content {
+      row-gap: 2rem;
+      @include sm {
+         grid-template-columns: repeat(2, 1fr);
+         column-gap: 6rem;
+      }
+   }
+
+   &_data {
+      display: grid;
+      row-gap: 0.25rem;
+
+      &:nth-child(1),
+      &:nth-child(4) {
+         margin-left: 3rem;
+
+         @include sm {
+            margin-left: 0rem;
+         }
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+         margin-left: 1.5rem;
+
+         @include sm {
+            margin-left: 0rem;
+         }
+      }
+   }
+
+   &_icon {
+      font-size: 1.5rem;
+      color: var.$white;
+   }
+
+   &_title {
+      font-size: var.$normal-font-size;
+      font-weight: var.$font-medium;
+   }
+
+   &_subtitle {
+      font-size: var.$smaller-font-size;
+   }
+
+   &_img {
+      width: 250px;
+      position: absolute;
+      top: 2rem;
+      right: -4rem;
+
+      @include md {
+         position: relative;
+         width: 300px;
+      }
+   }
+}

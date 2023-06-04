@@ -1,0 +1,65 @@
+@use '../helpers/mixins' as *;
+/* COLORS */
+$hue-color: 206;
+$black: hsl($hue-color, 4%, 4%);
+$black-secondary: hsl($hue-color, 4%, 8%);
+$title-color: hsl($hue-color, 4%, 95%);
+$text-color: hsl($hue-color, 4%, 75%);
+$text-color-light: hsl($hue-color, 4%, 65%);
+$white: #ffffff;
+$body-color: hsl($hue-color, 4%, 6%);
+$container-color: hsl($hue-color, 4%, 10%);
+$text-gradient: linear-gradient(
+   hsl($hue-color, 4%, 24%),
+   hsl($hue-color, 4%, 8%)
+);
+$scroll-thumb-color: hsl($hue-color, 4%, 16%);
+$scroll-thumb-color-secondary: hsl($hue-color, 4%, 20%);
+
+/* LAYOUT */
+$header-height: 3rem;
+
+/* MARGIN BOTTOM */
+$mb-0-5: 0.5rem;
+$mb-0-75: 0.75rem;
+$mb-1: 1rem;
+$mb-1-5: 1.5rem;
+$mb-2: 2rem;
+$mb-2-5: 2.5rem;
+
+/* TYPOGRAPHY */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Font Size */
+$body-font: 'Poppins', sans-serif;
+$largest-font-size: 5rem;
+$larger-font-size: 3.5rem;
+$large-font-size: 2.5rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1.125rem;
+$normal-font-size: 0.938rem;
+$small-font-size: 0.813rem;
+$smaller-font-size: 0.75rem;
+$text-line-height: 2rem;
+
+/* Responsive Typography */
+@include lg {
+   :root {
+      $largest-font-size: 7.5rem;
+      $larger-font-size: 4.5rem;
+      $large-font-size: 4rem;
+      $h2-font-size: 1.5rem;
+      $h3-font-size: 1.25rem;
+      $normal-font-size: 1rem;
+      $small-font-size: 0.875rem;
+      $smaller-font-size: 0.813rem;
+   }
+}
+
+/* Font Weight */
+$font-medium: 500;
+$font-semi-bold: 600;
+
+/* Z-INDEX */
+$z-tooltip: 10;
+$z-fixed: 100;
