@@ -23,9 +23,9 @@ The website contains 4 sections:
 
 Technologies used:
 
--  HTML
--  SCSS
--  JAVASCRIPT
+-  Html
+-  Scss
+-  Javascript
 
 Things I learned:
 
