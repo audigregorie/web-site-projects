@@ -1,7 +1,7 @@
 # Beats Studio Headphones
 
-![Beats Studio Headphones](../BeatsStudioHeadphones/BeatsStudioHeadphones-mobile-screenshot.png)
-![Beats Studio Headphones](../BeatsStudioHeadphones/BeatsStudioHeadphones-desktop-screenshot.png)
+![Beats Studio Headphones](BeatsStudioHeadphones/BeatsStudioHeadphones-mobile-screenshot.png)
+![Beats Studio Headphones](BeatsStudioHeadphones/BeatsStudioHeadphones-desktop-screenshot.png)
 
 ---
 
