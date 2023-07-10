@@ -1,1 +1,1 @@
-This is a repository to host my website projects.
+This is a repository to host my website and webapp projects.
